@@ -5,7 +5,7 @@ Kenzie assignment: List1
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "???"
+__author__ = "Greg Spurgeon with some help from Sondos Issa and some help from stack overflow and CSEstack.org for the tuples function"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -26,8 +26,12 @@ __author__ = "???"
 
 
 def match_ends(words):
-    # your code here
-    return
+    count = 0
+    for string in words:
+        if len(string) >= 2 and string[0] == string[-1]:
+            count += 1
+    return(count)
+            
 
 
 # B. front_x
@@ -42,8 +46,17 @@ def match_ends(words):
 
 
 def front_x(words):
-    # your code here
-    return
+    first_letter_x = []
+    all_other_words = []
+    for string in words:
+        if string[0] == "x":
+            first_letter_x.append(string)
+            first_letter_x.sort()
+        else:
+            all_other_words.append(string)
+            all_other_words.sort()
+            
+    return first_letter_x + all_other_words
 
 
 # C. sort_last
@@ -56,8 +69,7 @@ def front_x(words):
 
 
 def sort_last(tuples):
-    # your code here
-    return
+    return(sorted(tuples, key=lambda x: x[-1]))
 
 
 # Provided simple test() function used in main() to print
