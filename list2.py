@@ -5,7 +5,8 @@ Kenzie assignment: List2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Greg Spurgeon with help from Cesar Ramos, and facilitators Joseph and JT"
+__author__ = "GregSpurgeon with help from Cesar Ramos, and facilitators"
+"Joseph and JT"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -49,9 +50,9 @@ def remove_adjacent(nums):
 
 def zip_merge(list1, list2):
     results = []
-    zipped = zip(list1,list2)
-    for _ in zipped:
-        results.append(''.join(_))
+    zipped = zip(list1, list2)
+    for char in zipped:
+        results.append(''.join(char))
     return(results)
 
 # F. empty_filter
@@ -65,10 +66,11 @@ def zip_merge(list1, list2):
 
 def empty_filter(list1):
     results = []
+
     def sorting(item):
         if (item == "" or item is None):
             return False
-        else: 
+        else:
             return True
     filtered_list = (filter(sorting, list1))
     for index in filtered_list:
@@ -100,6 +102,8 @@ def linear_merge(list1, list2):
 
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
+
+
 def test(got, expected):
     if got == expected:
         prefix = ' OK '
