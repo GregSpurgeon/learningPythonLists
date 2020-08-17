@@ -5,8 +5,9 @@ Kenzie assignment: List1
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Greg Spurgeon with some help from Sondos Issa and some help"
-"from stack overflow and CSEstack.org for the tuples function"
+__author__ = """Greg Spurgeon with some help from Sondos Issa and some help
+from stack overflow and CSEstack.org for the tuples function"""
+
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
